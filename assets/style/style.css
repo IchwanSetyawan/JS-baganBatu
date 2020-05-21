@@ -24,6 +24,8 @@ nav {
     color: #eaeaea;
     z-index: 5;
     align-items: center;
+    position: fixed;
+    width: 100%;
  
 }
 nav ul{
@@ -112,7 +114,7 @@ main{
  .jumbotron img{
      width: 100%;
      /* margin-top: 70px; */
-     max-height: 600px;
+     max-height: 650px;
      object-fit: cover;
      object-position: center;     
      position: relative;     
