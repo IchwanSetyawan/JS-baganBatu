@@ -1,10 +1,29 @@
 
+//manual nav responsive
 const menuToggle = document.querySelector('.menu-toggle input');
 const nav = document.querySelector('nav ul');
 
 menuToggle .addEventListener('click', function() {
     nav.classList.toggle('slide');
-})
+});
+
+//multiple readMore
+
+function myFunction(city) {
+    let dots = document.querySelector(`.card[data-city="${city}"] .dots`);
+    let moreText = document.querySelector(`.card[data-city="${city}"] .more`);
+    let btnText = document.querySelector(`.card[data-city="${city}"] .readMore`);
+
+    if (dots.style.display === "none") {
+        dots.style.display = "inline";
+        btnText.textContent = "Read more";
+        moreText.style.display = "none";
+    } else {
+        dots.style.display = "none";
+        btnText.textContent = "Read less";
+        moreText.style.display = "inline";
+    }
+}
 
 
 //event pada saat link di klik
@@ -16,23 +35,9 @@ $('.page-scroll').on('click', function(e){
     var elementTujuan = $(tujuan);
     
      $('html, body').animate({
-         scrollTop: elementTujuan.offset().top-80
+         scrollTop: elementTujuan.offset().top-70
      }, 1000);
 
      e.preventDefault();
      
-
 });
-
-
-
-// var prevScrollpos = window.pageYOffset;
-// window.onscroll = function () {
-//     var currentScrollPos = window.pageYOffset;
-//     if (prevScrollpos > currentScrollPos) {
-//         document.getElementById("navbar").style.top = "0";
-//     } else {
-//         document.getElementById("navbar").style.top = "-100px";
-//     }
-//     prevScrollpos = currentScrollPos;
-// }

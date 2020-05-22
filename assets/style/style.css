@@ -46,7 +46,9 @@ nav .logo{
     cursive;
     letter-spacing: 2px;
     color: rgb(245, 245, 245);
+    
 }
+
 /* end navbar */
 
 /* hamburger menu */
@@ -157,6 +159,7 @@ width: 100%;
 max-height: 400px;
 object-fit: cover;
 object-position: center;
+margin-top: 20px;
 }
 .card {
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
@@ -164,9 +167,25 @@ object-position: center;
     padding: 20px;
     margin-top: 40px;
     margin-left: 20px;
-    background-color: #fff;    
-    
-        
+    background-color: #fff;                
+}
+
+.card-p p{
+    text-indent: 40px;    
+    text-align: justify;
+    line-height: 25px;
+}
+.more{
+    display: none;
+}
+
+button {
+    padding: 3px 5px;
+    border-radius: 10%;
+    background-color: lightseagreen;
+    outline-color: orange;
+    outline-style: none;
+    color: white;
 }
 
 
@@ -219,10 +238,9 @@ aside{
      
  }
 #gallery .list-img img,p{
-    padding: 5px;
-    
-    
+    padding: 5px;                
 }
+
 /* .clear{
     overflow: auto;
 } */
