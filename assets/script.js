@@ -3,9 +3,10 @@
 const menuToggle = document.querySelector('.menu-toggle input');
 const nav = document.querySelector('nav ul');
 
-menuToggle .addEventListener('click', function() {
-    nav.classList.toggle('slide');
+menuToggle.addEventListener('click', function() {
+    nav.classList.toggle('slide');        
 });
+
 
 //multiple readMore
 
@@ -16,11 +17,11 @@ function myFunction(city) {
 
     if (dots.style.display === "none") {
         dots.style.display = "inline";
-        btnText.textContent = "Read more";
+        btnText.textContent = "Selengkapnya";
         moreText.style.display = "none";
     } else {
         dots.style.display = "none";
-        btnText.textContent = "Read less";
+        btnText.textContent = "Lebih sedikit";
         moreText.style.display = "inline";
     }
 }

@@ -40,6 +40,9 @@ nav ul li a {
     color: #fff;
     text-decoration: none;
 }
+nav ul li a:hover {
+    font-weight: bold;
+}
 
 nav .logo{
     font-family: 'Pacifico',
@@ -174,6 +177,7 @@ margin-top: 20px;
     text-indent: 40px;    
     text-align: justify;
     line-height: 25px;
+    padding: 0 40px 0 40px;
 }
 .more{
     display: none;
@@ -186,6 +190,8 @@ button {
     outline-color: orange;
     outline-style: none;
     color: white;
+    margin-left: 40px;
+    
 }
 
 
@@ -227,7 +233,10 @@ aside{
     flex-wrap: wrap;
     justify-content: space-around;
     /* overflow: auto; */
-    width: 100%;
+    width: 90%;    
+    position: relative;
+    margin: auto;
+    
 }
  #gallery .list-img{
     margin: 10px;
@@ -235,15 +244,19 @@ aside{
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
     border-radius: 5px;
     background-color: #eaeaea;
+    
      
  }
-#gallery .list-img img,p{
+#gallery .list-img img{
     padding: 5px;                
 }
-
-/* .clear{
-    overflow: auto;
-} */
+#gallery .list-img p {
+    padding:0 10px 10px 10px;
+    font-size: 0.8em;
+}
+#gallery section{
+    margin-bottom: 50px;
+}
 
 
 
@@ -258,6 +271,7 @@ footer {
     margin-top: 10px;
     /* position: absolute; */
     float: left;
+    margin-top: 100px;
     
     
 }
